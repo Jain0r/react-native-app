@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Echo the message
         run: |
-          echo "hola"
+          echo "prueba"
       - name: Give me date
         run: date
       - run: |
