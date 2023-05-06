@@ -1,9 +1,13 @@
 name: Build android app
 
 on:
-  workflow_dispatch:
-    branches: [dev]
+  push:
+    branches:
+      - master
+  #workflow_dispatch:
+  #  branches: [dev]
     #cann add push an pull request here
+
 
 jobs:
   build:
