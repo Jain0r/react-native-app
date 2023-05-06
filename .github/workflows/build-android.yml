@@ -33,7 +33,6 @@ jobs:
       
       - name: Run Yarn Install
         run: |
-          cd ./packages/app-mobile/
           npm i -g corepack
           yarn install 
       
