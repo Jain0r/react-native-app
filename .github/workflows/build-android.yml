@@ -10,11 +10,11 @@ on:
 
 
 jobs:
-  build:
+  build-androide:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
 
       - name: Install Java
         uses: actions/setup-java@v2
@@ -33,7 +33,7 @@ jobs:
       
       - name: Run Yarn Install
         run: |
-             cd ./packages/app-mobile/
-             npm i -g corepack
-             yarn install 
+          cd ./packages/app-mobile/
+          npm i -g corepack
+          yarn install 
       
